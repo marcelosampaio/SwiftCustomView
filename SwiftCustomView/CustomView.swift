@@ -21,11 +21,15 @@ class CustomView: UIView {
         
         _ = Bundle.main.loadNibNamed("CustomView", owner: self, options: nil)?[0] as! UIView
         
-        
-        
         self.addSubview(view)
         view.frame = self.bounds
     }
     
+    
+    // MARK: - UI Actions
+    @IBAction func segmentedControlChangedValue(_ sender: Any) {
+        
+        print("🌴 changed value")
+    }
     
 }
