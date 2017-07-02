@@ -12,6 +12,8 @@
 		8255FEF01F08B4D500918D23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8255FEEE1F08B4D500918D23 /* Main.storyboard */; };
 		8255FEF21F08B4D500918D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8255FEF11F08B4D500918D23 /* Assets.xcassets */; };
 		8255FEF51F08B4D500918D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8255FEF31F08B4D500918D23 /* LaunchScreen.storyboard */; };
+		8255FEFE1F08B50A00918D23 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8255FEFD1F08B50A00918D23 /* CustomView.xib */; };
+		8255FF001F08B53C00918D23 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255FEFF1F08B53C00918D23 /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		8255FEF11F08B4D500918D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8255FEF41F08B4D500918D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8255FEF61F08B4D500918D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8255FEFD1F08B50A00918D23 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		8255FEFF1F08B53C00918D23 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		8255FEE91F08B4D500918D23 /* SwiftCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				8255FEFC1F08B4F700918D23 /* CustomView */,
 				8255FEEA1F08B4D500918D23 /* AppDelegate.swift */,
 				8255FEEC1F08B4D500918D23 /* ViewController.swift */,
 				8255FEEE1F08B4D500918D23 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				8255FEF61F08B4D500918D23 /* Info.plist */,
 			);
 			path = SwiftCustomView;
+			sourceTree = "<group>";
+		};
+		8255FEFC1F08B4F700918D23 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				8255FEFD1F08B50A00918D23 /* CustomView.xib */,
+				8255FEFF1F08B53C00918D23 /* CustomView.swift */,
+			);
+			name = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +110,7 @@
 				TargetAttributes = {
 					8255FEE61F08B4D500918D23 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 56H63D8DA5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8255FEF51F08B4D500918D23 /* LaunchScreen.storyboard in Resources */,
+				8255FEFE1F08B50A00918D23 /* CustomView.xib in Resources */,
 				8255FEF21F08B4D500918D23 /* Assets.xcassets in Resources */,
 				8255FEF01F08B4D500918D23 /* Main.storyboard in Resources */,
 			);
@@ -136,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8255FF001F08B53C00918D23 /* CustomView.swift in Sources */,
 				8255FEED1F08B4D500918D23 /* ViewController.swift in Sources */,
 				8255FEEB1F08B4D500918D23 /* AppDelegate.swift in Sources */,
 			);
@@ -260,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56H63D8DA5;
 				INFOPLIST_FILE = SwiftCustomView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MAS.SwiftCustomView;
@@ -272,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56H63D8DA5;
 				INFOPLIST_FILE = SwiftCustomView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MAS.SwiftCustomView;
