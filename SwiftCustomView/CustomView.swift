@@ -8,8 +8,21 @@
 
 import UIKit
 
+// MARK: - Prototols
+protocol CustomViewDelegate: class {
+    func didChangeSegmentedControlValue(value: Int)
+}
+
+
+
+
+// MARK: - Class
 class CustomView: UIView {
 
+    // MARK: - Properties
+    weak var delegate: CustomViewDelegate?
+    
+    
     // MARK: - Outlets
     
     @IBOutlet var view: UIView!
@@ -28,8 +41,13 @@ class CustomView: UIView {
     
     // MARK: - UI Actions
     @IBAction func segmentedControlChangedValue(_ sender: Any) {
+        // action to delegate
         
-        print("🌴 changed value")
+        let segmentedControl = sender as? UISegmentedControl
+        let selectedSegment = segmentedControl?.selectedSegmentIndex
+        
+        delegate?.didChangeSegmentedControlValue(value: selectedSegment!)
+        
     }
     
 }

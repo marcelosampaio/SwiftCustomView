@@ -35,6 +35,9 @@
                             <constraint firstItem="Z7c-a8-FEO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="kwH-RI-bRt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="customView" destination="Z7c-a8-FEO" id="SPv-od-PWC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

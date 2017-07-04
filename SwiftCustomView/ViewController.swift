@@ -8,18 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CustomViewDelegate {
+    
+    // MARK: - Outets
+    @IBOutlet weak var customView: CustomView!
+    
 
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.customView.delegate = self
+
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - CustomView Delegate
+    func didChangeSegmentedControlValue(value: Int) {
+        print("🤘 delegated action received.... value: \(value)")
     }
-
 
 }
 
